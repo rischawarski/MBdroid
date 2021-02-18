@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mbinfo.com.br.mb_os.Result">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vcliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="Cliente"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/rcliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="calvim"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/vcliente"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/vservico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Serviço"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/rcliente"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/rservico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Troca Memorias"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/vservico"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/vsitiacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:text="Situação"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/rservico"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/rsituacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Na bancada"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/vsitiacao"
+                android:layout_alignLeft="@+id/vsitiacao"
+                android:layout_alignStart="@+id/vsitiacao" />
+
+            <TextView
+                android:id="@+id/vvalor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rvalor"
+                android:layout_alignStart="@+id/rvalor"
+                android:layout_below="@+id/rsituacao"
+                android:layout_marginTop="22dp"
+                android:text="Valor"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/rvalor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="100,00"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/vvalor"
+                android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/btnligar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/ligar"
+        />
+</RelativeLayout>

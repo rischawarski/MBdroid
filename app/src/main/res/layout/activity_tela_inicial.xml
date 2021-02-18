@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mbinfo.com.br.mb_os.Tela_inicial">
+
+    <EditText
+        android:id="@+id/ost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Digite Numero de Serviço do Canhoto"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#104E8B"
+        android:textColorHint="#696969"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Verificar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsc"
+        android:layout_below="@+id/ver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp" />
+
+</RelativeLayout>
